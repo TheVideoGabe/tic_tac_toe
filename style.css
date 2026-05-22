@@ -1,0 +1,34 @@
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px #003985, 0 0 20px #69d0ff, 0 0 40px #46096e;
+  }
+  50% {
+    box-shadow: 0 0 20px #003985, 0 0 40px #003985, 0 0 60px #1ea5ff;
+  }
+}
+
+.pulsing-neon {
+  background: #111;
+  border: 0px solid #003985;
+  animation: pulse 2s infinite alternate;
+  /* display: flex; */
+}
+
+#title-container {
+  /* justify-content: center; */
+  /* align-items: center; */
+  color: #69d0ff;
+}
+
+#game-title {
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 5px #003985, 0 0 10px #69d0ff, 0 0 20px #46096e;
+}
+
+#title-container span {
+  font-size: 1.5em;
+  color: #69d0ff;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 5px #003985, 0 0 10px #69d0ff, 0 0 20px #46096e;
+}

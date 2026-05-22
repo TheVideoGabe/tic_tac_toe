@@ -2,7 +2,7 @@
 ---
 #### Here is a snapshot of the project in the current state:
 
-![Project](/media/loading.jpg)
+![Project](/Media/project_state1.png)
 
 ---
 
@@ -18,6 +18,7 @@
 
 ### To-Do List & Requirements
 
+ - [x] Make the navbar (animate it)
  - [ ] Store Gameboard spots Array Inside of a Gameboard Object
  - [ ] Make a game mode Object
  - [ ] Make a player object that creates instances for player one and 2
