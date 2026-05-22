@@ -2,7 +2,7 @@
 ---
 #### Here is a snapshot of the project in the current state:
 
-![Project](/Media/project_state1.png)
+![Project](/Media/projectState1.png)
 
 ---
 
