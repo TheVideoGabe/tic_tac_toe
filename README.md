@@ -1,8 +1,12 @@
 # The Odin Project Tic Tac Toe Repo
 ---
-#### Here is a snapshot of the project in the current state:
+#### Here is a snapshot of the Landing page:
 
-![Project](/media/projectState1.jpg)
+![Project](/media/LandingPage.png)
+
+#### Here is a snapshot of the game page:
+
+![Project](/media/gamePage.png)
 
 ---
 
@@ -19,18 +23,23 @@
 ### To-Do List & Requirements
 
  - [x] Make the navbar (animate it)
- - [ ] Store Gameboard spots Array Inside of a Gameboard Object
- - [ ] Make a game mode Object
- - [ ] Make a player object that creates instances for player one and 2
- - [ ] Avoid having global variables
- - [ ] Console prototype
- - [ ] DOM display/Render
+ - [x] Store Gameboard spots Array Inside of a Gameboard Object
+ - [x] Make a game mode Object
+ - [x] Make a player object that creates instances for player one and 2
+ - [x] Avoid having global variables
+ - [x] Make landing page
+ - [x] Added player 1 and 2 validation
+ - [x] DOM display/Render Game to Game page
+ - [ ] Aligned the X & O in the middle
  - [ ] Polish:
-   - [ ] Player names
-   - [ ] Start button
-   - [ ] Result Modal (Short Delay + success/fail sound effects)
-   - [ ] Restart button
-   - [ ] Exit button (Home/landing page)
-   - [ ] Score tally
-   - [ ] Prevent Hover after match end
+   - [x] Player names
+   - [x] Start button
+   - [x] Result Modal (Short Delay) With Play Again Button
+   - [x] Restart button
+   - [x] Exit button (Home/landing page)
+   - [x] Score tally
+   - [x] Prevent Hover after match end
+   - [x] Added Footer
+   - [x] Added Win Quotes
+   - [x] Added Draw quotes
    - [ ] Sound Effects

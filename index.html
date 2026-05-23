@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tic Tac Toe</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="landing.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<header>
-    <div class="container-fluid pulsing-neon centered-content justify-content-center py-3">
-    <header class="d-flex justify-content-center py-3">
-        <div class="container-fluid centered-content">
-            <div class="container text-center" id="title-container">
-                <span class="lead" id="scramble-text-1"></span>
-                <span class="lead" id="scramble-text-1"></span>
-                <span class="lead" id="scramble-text-1"></span>
-                <span class="lead" id="scramble-text-2"></span>
-                <span class="lead" id="scramble-text-2"></span>
-                <span class="lead" id="scramble-text-2"></span>
-                <h1 class="" id="game-title"><strong>Tic Tac Toe Game</strong></h1>
-                <span class="lead" id="scramble-text-3"></span>
-                <span class="lead" id="scramble-text-3"></span>
-                <span class="lead" id="scramble-text-3"></span>
-                <span class="lead" id="scramble-text-4"></span>
-                <span class="lead" id="scramble-text-4"></span>
-                <span class="lead" id="scramble-text-4"></span>
 
-            </div>
-        </div>
-    </header>
-  </div>
-</header>
 <body>
+    
+    <div class="top-xo-ribbon"></div>
+    
+    <div class="container">
+      <div class="xo-anim"></div>
+    <h1>TIC TAC TOE</h1>
+    <p>Built With HTML, CSS, JavaScript, GSAP, Bootstrap</p>
+
+    <div class="mode-select">
+      <!-- Hook these buttons to your game later -->
+      <button class="primary" id="playBtn" disabled onclick="startGame()">
+        Enter Names to Play
+      </button>
+
+      <button class="secondary" onclick="window.open('https://github.com/TheVideoGabe/tic_tac_toe/tree/main', '_blank')">
+        GitHub Repo
+      </button>
+    </div>
+
+    <div class="footer">
+      <p class="text-center" id="playerNames">
+        Who's Playing?
+      </p>
+    </div>
+    <div class="player-setup">
+        <input id="player1" type="text" placeholder="Player 1 Name (X)" />
+        <input id="player2" type="text" placeholder="Player 2 Name (O)" />
+        <button type="button" class="reset-btn" id="resetBtn">
+            Clear Saved Names
+        </button>
+    </div>    
+    <p class="text-center">Made By VideoGabe ❤️</p>
+</div>
 
 </body>
-
+<div class="grid-footer"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
@@ -42,7 +53,5 @@
 
 
 
-<script defer src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script defer src="landing.js"></script>
 </html>
-

@@ -32,3 +32,183 @@
   font-family: 'Courier New', Courier, monospace;
   text-shadow: 0 0 5px #003985, 0 0 10px #69d0ff, 0 0 20px #46096e;
 }
+
+.board{
+display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+
+  width: fit-content;
+  gap: 8px;
+
+  margin: 0 auto;
+}
+
+.cell{
+    width: 120px;
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(18, 19, 20);
+
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 18px;
+
+  box-shadow:
+    0 0 12px rgba(0,0,0,0.5),
+    0 0 20px rgba(255,255,255,0.02);
+
+  font-size: 5rem;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+    padding: 0;
+}
+
+/* fine tune symbol position */
+.x-player,
+.o-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 10px 0px;
+
+  width: 100%;
+  height: 100%;
+
+  line-height: 1;
+
+  /* tiny optical adjustment */
+  transform: translateY(-2px);
+}
+
+.x-player{
+  color: #69d0ff;
+  text-shadow: 0 0 5px #003985, 0 0 10px #69d0ff, 0 0 20px #46096e;
+}
+
+.o-player{
+  color: #c163ff;
+  text-shadow: 0 0 5px #003985, 0 0 10px #c163ff, 0 0 20px #9600a3;
+}
+
+.cell:hover{
+  transform: translateY(-4px);
+
+  border-color: rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 0 18px rgba(0,0,0,0.7),
+    0 0 25px rgba(255,255,255,0.05),
+    0 0 35px rgba(255,255,255,0.03);
+}
+
+/* Scoreboard */
+.scoreboard {
+  display: flex;
+  gap: 30px;
+  /* margin-bottom: 20px; */
+  color: white;
+  
+}
+
+.player-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  background-color: rgba(0, 255, 191, 0.185);
+  box-shadow: 0 0 10px rgba(0, 255, 213, 0.288);
+  /* min-width: 120px; */
+  backdrop-filter: blur(5px);
+  background-clip: padding-box;
+  color: #000000;
+  font-weight: bold;
+}
+
+.player-score span:first-child {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.player-score span:last-child {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ffd5;
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 2rem;
+  opacity: 0.6;
+  color: #ff7b00;
+}
+
+/* clear saved names button */
+.exit-btn {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 80, 80, 0.6);
+  background: transparent;
+  color: #ff5a5a;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.exit-btn:hover {
+  background: rgba(255, 80, 80, 0.1);
+  box-shadow: 0 0 10px rgba(255, 80, 80, 0.4);
+  transform: scale(1.03);
+}
+
+.primary {
+  color: #0f0f1a;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 0 10px #000000;
+}
+
+/* Player X (blue theme) */
+.primary.x-theme {
+  background: #69d0ff;
+}
+
+.primary.x-theme:hover {
+  box-shadow: 0 0 15px #69d0ff, 0 0 30px #69d0ff;
+  transform: scale(1.05);
+}
+
+/* Player O (purple theme) */
+.primary.o-theme {
+  background: #c163ff;
+}
+
+.primary.o-theme:hover {
+  box-shadow: 0 0 15px #c163ff, 0 0 30px #c163ff;
+  transform: scale(1.05);
+}
+
+/* Draw */
+.primary.draw-theme {
+  background: #df7e00;
+}
+
+.primary.draw-theme:hover {
+  box-shadow: 0 0 15px #d6800e, 0 0 30px #df7e00;
+  transform: scale(1.05);
+}
